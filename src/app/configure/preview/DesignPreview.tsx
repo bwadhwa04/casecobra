@@ -12,7 +12,6 @@ import { ArrowRight, Check } from "lucide-react"
 import { useEffect, useState } from "react"
 import Confetti from "react-dom-confetti"
 import { createCheckoutSession } from "./actions"
-import { url } from "inspector"
 import { useRouter } from "next/navigation"
 import { useToast } from "@/components/ui/use-toast"
 import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs"
@@ -26,7 +25,7 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
     const [ isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false)
 
     const [showConfetti, setShowConfetti] = useState<boolean>(false)
-    useEffect(() => setShowConfetti(true))
+    useEffect(() => setShowConfetti(true), [])
 
     const { color, model, finish, material } = configuration
 

@@ -3,7 +3,7 @@
 import HandleComponent from "@/components/HandleComponent"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { cn, formatPrice } from "@/lib/utils"
-import NextImage from "Next/image"
+import  NextImage from "next/image"
 import {Rnd} from "react-rnd"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import {RadioGroup} from "@headlessui/react"
@@ -161,7 +161,7 @@ const DesignConfigurator = ({
                 className="pointer-events-none
                 relative z-50 aspect-[896/1831] 
                 w-full">
-                    <NextImage 
+                    <NextImage
                     fill
                     alt="phone image" 
                     src="/phone-template.png"

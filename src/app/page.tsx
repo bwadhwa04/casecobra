@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Image from "next/image";
 import {ArrowBigRight, ArrowRight, Check} from "lucide-react";
 import {Star} from "lucide-react";
 import Phone from "@/components/Phone";
